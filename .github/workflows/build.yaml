@@ -22,8 +22,10 @@ jobs:
         with:
           node-version: 16.x
           cache: yarn
-      - name: Install
+      - name: Install NPM Modules
         run: yarn --network-timeout 100000 || yarn --network-timeout 100000 || yarn --network-timeout 100000
+      - name: Install Flatpack deps
+        run: apt-get install -y flatpak flatpak-builder eu-strip
       - name: Make
         if: startsWith(github.ref, 'refs/tags/')
         run: yarn make --arch=x64
