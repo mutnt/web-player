@@ -11,6 +11,7 @@ module.exports = {
   packagerConfig: {},
   rebuildConfig: {},
   makers: [
+    /** /
     {
       name: "@electron-forge/maker-squirrel",
       config: { options },
@@ -22,6 +23,7 @@ module.exports = {
         options,
       },
     },
+    /**/
     {
       name: "@electron-forge/maker-flatpak",
       config: {

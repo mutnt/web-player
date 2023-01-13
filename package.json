@@ -18,6 +18,8 @@
   },
   "license": "MIT",
   "dependencies": {
+    "@electron-forge/maker-flatpak": "^6.0.4",
+    "@electron-forge/publisher-github": "^6.0.4",
     "electron-squirrel-startup": "^1.0.0",
     "express": "^4.18.2",
     "serve-index": "^1.9.1"
